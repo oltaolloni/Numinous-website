@@ -1,0 +1,443 @@
+body{
+    margin: 0px;
+    height: 600px;
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7px 0;
+    transition: background-color 2s ease;
+    z-index: 20;
+}
+/* .navbar:hover{
+    background-color: #DADDC4;
+} */
+.numinous{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 27px;
+    text-decoration: none;
+    color: white;
+    position: relative; top: 5px;
+}
+.numinous::after{
+    content: '';
+    background-color: #DADDC4;
+    height: 2px;
+    width: 0%;
+    display: block;
+    transition: .5s ease-in-out;
+}
+.numinous:hover::after{
+    content: '';
+    background-color: #DADDC4;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+.logo{
+    position: relative;
+    right: 40px;
+    text-decoration: none;
+    bottom: 10px;
+}
+.llogo{
+    width: 130px;
+    height: 50px;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 300px;
+    margin-right: 70px;
+    display: inline;
+    cursor: pointer;
+}
+.button:hover{
+    color: #DADDC4;
+}
+.button:active{
+    color: #DADDC4;
+    text-decoration: underline;
+}
+.dropdown{
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 240px;
+    background-color: #DADDC4;
+    min-width: 230px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 0.5px #2A3A2C solid;
+    border-radius: 10px;
+}
+.down{
+    display: block;
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 22px;
+    color: #2A3A2C;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 0.5px #2A3A2C solid;
+}
+.dropdown:hover .dropdown_menu{
+    display: block;
+}
+.dropdown_menu a:hover{
+    background-color: #425c46;
+    color: white;
+    
+}
+.firstt{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+  .third{
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+  }
+.green{
+    background-color: #2A3A2C;
+    border-radius: 40px;
+    border: white 1px solid;
+    width: 140px;
+    height: 50px;
+    position: relative; bottom: 0px; left: 50px;
+    transition: background-color .5s ease;
+}
+.green:hover{
+    background-color: orangered;
+}
+.green:active{
+    background-color: #425c46;
+}
+.green p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    position: relative; top: 0px;
+}
+.link{
+    text-decoration: none;
+}
+
+/* BOOKING FORM */
+.form-page{
+   background-color: #2A3A2C;
+   height: 850px;
+   position: absolute;
+   width: 100%;
+   z-index: 10;
+   display: flex;
+}
+.left{
+    flex: 1;
+    position: relative; left: 100px ; top: 20px;
+}
+.right{
+    flex:1;
+    position: relative; right: 80px; top: 20px;
+}
+.main-text{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 42px;
+    color: white;
+    position: relative;top: 100px; left: 25px;
+    font-weight: 600;
+}
+.circle{
+    border-radius: 50%;
+    border: white 1px solid;
+    width: 340px;
+    height: 340px;
+    position: relative; top: 100px;
+    text-align: center;
+    transition: border 0.5s ease;
+
+}
+.circle:hover{
+    border: #DADDC4 3px solid;
+}
+.phone-icon{
+    width: 60px;
+    height: 60px;
+    position: relative; top: 60px;
+}
+.call{
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;top: 40px;
+}
+.subject-text{
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;top: 75px; left: 25px;
+}
+.input{
+    border: white 1.2px solid;
+    background-color: #2A3A2C;
+    border-radius: 10px;
+    height: 40px;
+    width: 270px;
+    color: white;
+    position: relative; top: 90px; left: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px; 
+    padding-left: 10px;
+}
+.date{
+   width: 268px;
+   height: 43px;
+   padding-right: 5px;
+}
+label{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+#can{
+    position: relative;
+    top: 90px; left: 20px;
+}
+#subs{
+    position: relative;top: 72px; left: 180px;
+}
+.canl{
+    position: relative; top: 88px; left: 17px;
+    text-align: left;
+    max-width: 200px;
+}
+.info{
+    position: relative; left: 25px;
+}
+.subsl{
+ position: relative; top: 70px; left: 180px; 
+}
+.news{
+  position: relative;left: 170px;
+}
+
+.message{
+    width: 150px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #2A3A2C;
+    color: white;
+    border: white 1px solid;
+    position: relative;top: 110px; left: 230px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color .5s ease;
+    font-size: 16px;
+}
+.message:hover{
+    background-color: orangered;
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+    body{
+        margin: 0px;
+        height: 600px;
+    }
+    
+    /* Navbar */
+.navbar{
+    position: relative;
+    background-color: #2A3A2C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    transition: background-color 2s ease;
+}
+.logo{
+    position: relative;
+    right: 0px;
+    bottom: 10px;
+}
+.llogo{
+    width: 110px;
+    height: 42px;
+}
+.button{
+    font-size: 12px;
+    position: relative;
+    left: 25px;
+    bottom: 5px;
+    margin-right: 20px;
+}
+.dropdown_menu{
+    left: 7px;
+    background-color: #DADDC4;
+    min-width: 130px;
+}
+.green{
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    bottom: 7px; 
+    left: 7px;
+}
+.green p{
+    font-size: 13px;
+    position: relative; top: 0px;
+}
+    .numinous{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 23px;
+        text-decoration: none;
+        color: white;
+        position: relative; top: 5px;
+    }
+    .numinous::after{
+        content: '';
+        background-color: #DADDC4;
+        height: 2px;
+        width: 0%;
+        display: block;
+        transition: .5s ease-in-out;
+    }
+    .numinous:hover::after{
+        content: '';
+        background-color: #DADDC4;
+        height: 2px;
+        width: 100%;
+        display: block;
+    }
+    
+    /* BOOKING FORM */
+    .form-page{
+       height: 980px;
+       position: absolute;
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .left{
+        flex: 1;
+        position: relative; 
+        left: 0px ; 
+        top: -100px;
+    }
+    .right{
+        flex:1;
+        position: relative; 
+        right: 0px; 
+        top: -120px;
+    }
+    .main-text{
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 35px;
+        color: white;
+        position: relative;top: 100px; left: 25px;
+        font-weight: 600;
+    }
+    .circle{
+        border-radius: 50%;
+        border: white 1px solid;
+        width: 250px;
+        height: 250px;
+        position: relative; top: 80px; left: 100px;
+        text-align: center;
+        transition: border 0.5s ease;
+    }
+    .phone-icon{
+        width: 50px;
+        height: 50px;
+        position: relative; top: 60px;
+    }
+    .call{
+        color: white;
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        position: relative;top: 40px;
+    }
+    .subject-text{
+        color: white;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;top: 75px; left: 25px;
+    }
+    .input{
+        height: 30px;
+        width: 190px;
+        color: white;
+        position: relative; top: 90px; left: 20px;
+        margin-bottom: 10px;
+        margin-right: 15px; 
+        padding-left: 10px;
+    }
+    .date{
+       width: 187px;
+       height: 33px;
+       padding-right: 5px;
+    }
+    label{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    #can{
+        position: relative;
+        top: 90px; left: 20px;
+    }
+    #subs{
+        position: relative;top: 72px; left: 110px;
+    }
+    .canl{
+        position: relative; top: 88px; left: 17px;
+        text-align: left;
+        max-width: 200px;
+    }
+    .info{
+        position: relative; left: 25px;
+    }
+    .subsl{
+     position: relative; top: 70px; left: 105px; 
+    }
+    .news{
+      position: relative;left: 160px;
+    }
+    
+    .message{
+        width: 120px;
+        height: 50px;
+        border-radius: 40px;
+        background-color: #2A3A2C;
+        position: relative;top: 110px; left: 180px;
+        font-family: 'Montserrat', sans-serif;
+        transition: background-color .5s ease;
+        font-size: 14px;
+    }
+    .message:hover{
+        background-color: orangered;
+    }
+
+
+
+}
